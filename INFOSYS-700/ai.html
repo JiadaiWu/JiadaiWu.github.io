@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ai.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="menubtn"></div>
+    <div class="menu">
+		<div class="menuleft">
+			<li class="profile">group and personal</li>
+			<br><br><br><br>
+			<li><a href="web.html">Group Project</a></li>
+			<br><br><br><br>
+			<li><a href="personal.html">Personal Insights and Reflections</a></li>
+			<br><br><br><br>
+		</div><!--left-->
+		<div class="menuright">
+			<li class="works">Lessons and Lectures</li>
+			<br><br><br><br>
+			<li><a href="ai.html">AI & Emerging Tech</a></li>
+			<br><br><br><br>
+			<li><a href="ad.html">Digital Innovation & Cloud</a></li>
+			<br><br><br><br>
+			<li><a href="pre.html">Peer Presentations</a></li>
+			<br><br><br><br>
+		</div><!--right-->
+	</div><!--menu-->
+    <main>
+        <div class="concept">
+            <h2>AI & Emerging Tech</h2>
+            <p>During the course, discussions on artificial intelligence and emerging technologies broadened my horizons and gave me a deeper understanding of the wide-ranging impact of these technologies on society and industries. Through case studies, I realized that AI is more than just a tool to improve efficiency; it can also have a profound impact on the way human beings work, business models and even professional identities. In particular, the discussion on automation and AI ethics made me reflect on the complexity of automating decisions and data bias issues. As AI and self-driving systems advance, society will have to deal with issues of responsibility allocation and equity. The research in the course helped me understand the role of AI in automated systems and prompted me to think about how to find a balance between technological advancement and ethical responsibility in the future.</p>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menubtn').on('click', function() {
+                $(this).toggleClass('menubtnc');
+                $('.menu').toggleClass('menuafter');    
+            });
+        });
+    </script>
+</body>
+</html>
