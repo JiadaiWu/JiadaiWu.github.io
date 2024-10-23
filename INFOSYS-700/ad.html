@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Innovation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ad.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="menubtn"></div>
+    <div class="menu">
+		<div class="menuleft">
+			<li class="profile">group and personal</li>
+			<br><br><br><br>
+			<li><a href="web.html">Group Project</a></li>
+			<br><br><br><br>
+			<li><a href="personal.html">Personal Insights and Reflections</a></li>
+			<br><br><br><br>
+		</div><!--left-->
+		<div class="menuright">
+			<li class="works">Lessons and Lectures</li>
+			<br><br><br><br>
+			<li><a href="ai.html">AI & Emerging Tech</a></li>
+			<br><br><br><br>
+			<li><a href="ad.html">Digital Innovation & Cloud</a></li>
+			<br><br><br><br>
+			<li><a href="pre.html">Peer Presentations</a></li>
+			<br><br><br><br>
+		</div><!--right-->
+	</div><!--menu-->
+    <main>
+        <div class="concept">
+            <div class="overlay"></div>
+            <h2>Digital Innovation & Cloud</h2>
+            <p>By learning about digital innovation and cloud technologies, I gained a deeper understanding of digital transformation. Cloud technology not only brings technical flexibility and scalability, but also completely changes the business model of enterprises. The pay-as-you-go model of cloud services breaks the limitations of traditional technology infrastructure and provides opportunities for startups and small businesses to innovate. In this course, I learned how to optimize resource allocation and improve data security through cloud technology. In particular, AWS's shared responsibility model made me realize that security in a cloud environment is not just a technical issue, but also a strategic and cultural adjustment. This realization has given me a much clearer picture of my role in the digital business of the future.</p>
+            <p>The Internet of Things (IoT) has been a key driving force behind digital innovation, fundamentally changing the way devices are connected and data is utilized. By connecting physical devices, sensors, and software, IoT enables us to collect, analyze, and share massive amounts of data in real-time, not only improving operational efficiency but also providing intelligent decision-making and predictive capabilities. The support of cloud technology provides IoT with powerful storage and processing capabilities, enabling distributed devices to be efficiently managed and analyzed. During the event, the teacher showed us various functions that can be achieved through IoT, such as monitoring flight, wind direction, and power. The application scenarios of IoT are extensive, ranging from smart homes and smart cities to industrial automation. It is leading the digital transformation in multiple fields and bringing huge value to the economy and society.</p>
+        </div>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menubtn').on('click', function() {
+                $(this).toggleClass('menubtnc');
+                $('.menu').toggleClass('menuafter');    
+            });
+        });
+    </script>
+</body>
+</html>

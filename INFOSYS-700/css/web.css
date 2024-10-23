@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.logo img {
+    width: 50px; /* 调整为适当的宽度 */
+    height: auto; /* 保持纵横比 */
+}
+body {
+    overflow: hidden;
+    margin: 0;
+}
+.shell {
+    height: 100vh;
+    display: flex;
+}
+.text {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    flex: 1;
+    position: absolute; /* Make the text box absolute */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+    z-index: 8; /* Ensure it is above other elements */
+    max-width: 400px; /* Optional: Set a max width for the text box */
+    animation: floatIn 0.5s ease-out; /* Add float animation */
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translate(-50%, -60%); /* Start slightly higher */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translate(-50%, -50%); /* Center in final position */
+    }
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    overflow-y: auto;
+}
+.box {
+    flex: 1;
+    box-shadow: -20px 0 20px 5px rgba(255, 255, 255, 0.77);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.img1 {
+    background-image: url(../images/web1.jpg);
+}
+.img2 {
+    background-image: url(../images/web2.jpg);
+}
+.img3 {
+    background-image: url(../images/web5.png);
+}
+.img4 {
+    background-image: url(../images/web6.jpg);
+}
+.header {
+    height: 73px;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 30px;
+    border-bottom: 2px solid white;
+}
+.title {
+    display: inline-block;
+    height: 65px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 4px;
+}
+.text p {
+    font-family: 'Libre Baskerville', serif;
+    margin: 20px 0;
+    line-height: 25px;
+    font-size: 20px;
+   
+}

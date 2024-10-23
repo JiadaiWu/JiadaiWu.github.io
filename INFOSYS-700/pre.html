@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Package</title>
+  <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/pre.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+  <div class="menubtn"></div>
+  <div class="menuafter"></div>
+  <div class="menu">
+    <div class="menuleft">
+        <li class="profile">group and personal</li>
+        <br><br><br><br>
+        <li><a href="web.html">group project</a></li>
+        <br><br><br><br>
+        <li><a href="personal.html">Personal Insights and Reflections</a></li>
+        <br><br><br><br>
+    </div><!--left-->
+    <div class="menuright">
+        <li class="works">Lessons and Lectures</li>
+        <br><br><br><br>
+        <li><a href="ai.html">AI & Emerging Tech</a></li>
+        <br><br><br><br>
+        <li><a href="ad.html">Digital Innovation & Cloud</a></li>
+        <br><br><br><br>
+        <li><a href="pre.html">peer presentations</a></li>
+        <br><br><br><br>
+    </div><!--right-->
+</div><!--menu-->
+
+  <div class="shell">
+    <section class="presentation">
+      <img src="./images/pre1.png" alt="Presentation Image 1" class="presentation-image">
+      <div class="text">
+        <h2>Peer Presentations</h2>
+        <p>During my classmate's demonstration, I was impressed by the application of Augmented Reality (AR) and Virtual Reality (VR) in retail and marketing. These technologies increase customer engagement and brand loyalty by creating an immersive user experience that allows consumers to try out products in a virtual environment. AR and VR are revolutionizing the way retail is marketed, enabling consumers to experience online shopping that is similar to the joy of physical stores.</p>
+      </div>
+    </section>
+
+    <section class="presentation">
+      <img src="./images/pre2.png" alt="Presentation Image 2" class="presentation-image">
+      <div class="text">
+        <h2>Activities and Games in Presentations</h2>
+        <p>After the presentations, there is usually a small game to encourage the winners with snacks and candy. This inspired me to consider using activities and games to enliven the atmosphere and engage the audience during presentations.</p>
+      </div>
+    </section>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');	
+			}
+		});
+
+		const wh = window.innerHeight;
+		const sectionBlock = Array.from(document.querySelectorAll('.box-block'));
+		window.addEventListener('scroll', () => {
+			sectionBlock.forEach(el => {
+				const{bottom, top, height } = el.getBoundingClientRect();
+				if(bottom <= 0 || top >= wh) return;
+				const y = document.documentElement.scrollTop * 0.5;
+				el.style.backgroundPosition = `center - ${y}px`;
+			});
+		});
+	</script>
+</body>
+</html>
